@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="vi">
+  
+<head>
+  <meta charset="utf-8" />
+  <title>Giới thiệu bản thân</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="#gioi-thieu">Giới thiệu bản thân</a>
+    <a href="#giao-luu">Gửi thông tin và giao lưu cùng tôi</a>
+  </nav>
+
+  <div id="gioi-thieu">
+    <h1 style="color: #CAEDFF;">Giới thiệu bản thân</h1>
+    <img src="thaonguyen.jpg" alt="Ảnh đại diện" width="300" height="250">
+
+    <h2 style="color: #D8B4F8;">Thông tin cơ bản</h2>
+    <ul>
+      <li>Tên: Nguyễn Trần Thảo Nguyên</li>
+      <li>Năm sinh: 2005</li>
+      <li>Chuyên ngành: Hệ thống thông tin</li>
+    </ul>
+
+    <h2 style="color: #D8B4F8;">Sở thích</h2>
+    <h3 style="color: #FFC7EA;">Món ăn</h3>
+    <ol>
+      <li>Bánh mì</li>
+      <li>Lẩu</li>
+      <li>Gà rán</li>
+    </ol>
+
+    <h3 style="color: #FFC7EA;">Giải trí</h3>
+    <h4>Bài hát yêu thích</h4>
+    <ul>
+      <li>vampire - Olivia Rodrigo</li>
+      <li>Fame is gun - Addison Rae</li>
+      <li>Mất kết nối - Dương Domic</li>
+    </ul>
+
+    <h2 style="color: #D8B4F8;">Mục tiêu của bản thân</h2>
+    <table>
+      <tr>
+        <th>Mục tiêu</th>
+        <th>Thời hạn</th>
+        <th>Hoàn thành</th>
+      </tr>
+
+      <tr>
+        <td>Trung bình điểm môn web đạt 8.0</td>
+        <td>29/11/2025</td>
+        <td><input type="checkbox"></td>
+      </tr>
+
+      <tr>
+        <td>Đạt chứng chỉ ngoại ngữ đủ chuẩn tốt nghiệp</td>
+        <td>01/05/2026</td>
+        <td><input type="checkbox"></td>
+      </tr>
+
+      <tr>
+        <td>Chọn được công ty với vị trí Business Analyst</td>
+        <td>01/07/2026</td>
+        <td><input type="checkbox"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="giao-luu">
+    <h1 style="color: #CAEDFF;">Gửi thông tin và giao lưu cùng tôi</h1>
+
+    <form action="#" method="get">
+      <label for="name">Họ và tên:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="message">Lời nhắn:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+      <label>Giới tính:</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Nam</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Nữ</label><br><br>
+
+      <label>Sở thích:</label><br>
+      <input type="checkbox" id="music" name="music" value="music">
+      <label for="music">Nghe nhạc</label>
+      <input type="checkbox" id="swim" name="swim" value="swim">
+      <label for="swim">Bơi lội</label>
+      <input type="checkbox" id="beach" name="beach" value="beach">
+      <label for="beach">Biển</label><br><br>
+
+      <label for="Nganh">Ngành:</label>
+      <select id="Nganh" name="Nganh">
+        <option value="httt">Hệ thống thông tin</option>
+        <option value="tmdt">Thương mại điện tử</option>
+        <option value="cntt">Công nghệ thông tin</option>
+        <option value="khmt">Khoa học máy tính</option>
+        <option value="ktpm">Kỹ thuật phần mềm</option>
+        <option value="ktmt">Kỹ thuật máy tính</option>
+        <option value="mmt&ttdl">Mạng máy tính & Truyền thông dữ liệu</option>
+        <option value="attt">An toàn thông tin</option>
+        <option value="khdl">Khoa học dữ liệu</option>
+        <option value="ttnt">Trí tuệ nhân tạo</option>
+        <option value="tkvm">Thiết kế vi mạch</option>
+        <option value="ttdpt">Truyền thông đa phương tiện</option>
+      </select><br><br>
+
+      <input type="submit" value="Gửi">
+    </form>
+  </div>
+
+  <footer>
+    <p>@2024 23521052 Nguyễn Trần Thảo Nguyên</p>
+  </footer>
+
+</body>
+</html>

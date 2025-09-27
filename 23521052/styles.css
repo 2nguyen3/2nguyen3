@@ -1,0 +1,52 @@
+h1, h2, h3, h4 {
+    font-size: 24px;
+    text-shadow: 1px 1px 0 #000; /* Viền chữ màu đen */
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div:first-of-type {
+    background-color: #F3FDE8;
+    padding: 20px;
+}
+
+div:last-of-type {
+    background-image: url('background.jpg');
+    background-repeat: repeat;
+    text-align: center;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav, footer {
+    background-color: #d4f2f4;
+    color: #0b0848;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0b0848;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0;
+}
