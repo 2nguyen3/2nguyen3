@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="vi">
-  
 <head>
   <meta charset="utf-8" />
   <title>Giới thiệu bản thân</title>
@@ -15,8 +14,8 @@
   </nav>
 
   <div id="gioi-thieu">
-    <h1 style="color: #CAEDFF;">Giới thiệu bản thân</h1>
-    <img src="thaonguyen.jpg" alt="Ảnh đại diện" width="300" height="250">
+    <h1 style="color: #CAEDFF; text-align: center;">Giới thiệu bản thân</h1>
+    <img id="avatar" src="img/avatar.jpg" alt="Ảnh đại diện" width="300" height="250">
 
     <h2 style="color: #D8B4F8;">Thông tin cơ bản</h2>
     <ul>
@@ -42,7 +41,7 @@
     </ul>
 
     <h2 style="color: #D8B4F8;">Mục tiêu của bản thân</h2>
-    <table>
+    <table id="goals-table">
       <tr>
         <th>Mục tiêu</th>
         <th>Thời hạn</th>
@@ -52,19 +51,19 @@
       <tr>
         <td>Trung bình điểm môn web đạt 8.0</td>
         <td>29/11/2025</td>
-        <td><input type="checkbox"></td>
+        <td><input type="checkbox" class="goal-checkbox"></td>
       </tr>
 
       <tr>
         <td>Đạt chứng chỉ ngoại ngữ đủ chuẩn tốt nghiệp</td>
         <td>01/05/2026</td>
-        <td><input type="checkbox"></td>
+        <td><input type="checkbox" class="goal-checkbox"></td>
       </tr>
 
       <tr>
         <td>Chọn được công ty với vị trí Business Analyst</td>
         <td>01/07/2026</td>
-        <td><input type="checkbox"></td>
+        <td><input type="checkbox" class="goal-checkbox"></td>
       </tr>
     </table>
   </div>
@@ -72,7 +71,7 @@
   <div id="giao-luu">
     <h1 style="color: #CAEDFF;">Gửi thông tin và giao lưu cùng tôi</h1>
 
-    <form action="#" method="get">
+    <form id="contact-form" action="#" method="get">
       <label for="name">Họ và tên:</label>
       <input type="text" id="name" name="name"><br><br>
 
@@ -116,9 +115,15 @@
     </form>
   </div>
 
+  <!-- Nút lên đầu trang -->
+  <button id="backToTop" title="Lên đầu trang">⬆</button>
+
   <footer>
     <p>@2024 23521052 Nguyễn Trần Thảo Nguyên</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 
 </body>
 </html>

@@ -15,7 +15,7 @@ div:first-of-type {
 }
 
 div:last-of-type {
-    background-image: url('background.jpg');
+    background-image: url('img/background.jpg');
     background-repeat: repeat;
     text-align: center;
     padding: 20px;
@@ -50,3 +50,43 @@ nav a {
 footer p {
     margin: 0;
 }
+
+/* === Hiệu ứng ảnh === */
+#avatar {
+  display: block;
+  border-radius: 10px; /* mặc định */
+  box-shadow: 0 0 25px rgba(202, 237, 255, 0.5),
+              0 0 45px rgba(216, 180, 248, 0.3);
+  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  object-fit: cover;
+  background: radial-gradient(circle at center, #fefefe, #e1f5fe);
+}
+
+#avatar:hover {
+  /* JS vẫn sẽ scale + border riêng, nên ở đây chỉ thêm ánh sáng */
+  box-shadow: 0 0 35px rgba(202, 237, 255, 0.8),
+              0 0 60px rgba(216, 180, 248, 0.6);
+  filter: brightness(1.05);
+}
+
+/* === Nút Lên đầu trang === */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #CAEDFF;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#backToTop:hover {
+  background-color: #CAEDFF;
+}
+
